@@ -1,0 +1,70 @@
+{
+  "resume_title": "李一奇 - 个人简历",
+  "name": "李一奇",
+  "job_intension": "前端工程师 / 软件工程师",
+  "contact": {
+    "phone": "18819431152",
+    "email": "liyiqi1996@gmail.com",
+    "wechat": {
+      "id": "SYSU_017",
+      "qrcode": "static/wechat.png"
+    },
+    "github": {
+      "url": "https://github.com/54017"
+    }
+  },
+  "education": {
+    "title": "教育背景",
+    "schools": [{
+      "name": "中山大学",
+      "major": "软件工程（本科）",
+      "start": "2013 年 8 月",
+      "end": "2017 年 6 月",
+      "honors": [
+        "2013 - 2014 学年度校**三等奖学金**",
+        "2013 - 2014 外研杯**全国英语写作大赛二等奖**",
+        "2014 - 2015 学年度校**三等奖学金**"
+      ]
+    }]
+  },
+  "language": {
+    "title": "语言水平",
+    "certificate": [{
+      "type": "CET-4",
+      "full": "710",
+      "score": "607"
+    }, {
+      "type": "CET-6",
+      "full": "710",
+      "score": "557"
+    }],
+    "description": [
+      "能流畅阅读英文专业书籍、文档及其他资料",
+      "可无字幕观看技术类课程、开发者大会视频",
+      "能够在 Github、 Stack Overflow 等社区正常交流"
+    ]
+  },
+  "experience": {
+    "title": "项目与工作经历",
+     "works": [{
+      "name": "阿里巴巴 移动事业群 （实习）",
+      "start": "2015.07",
+      "end": "2015.09",
+      "description": [
+        "使用模块模式开发安卓版-PP助手页面抽奖功能",
+        "解决原模块遗留的bug，解耦合各个小模块并完成逻辑上的优化",
+        "使用 `Canvas` / `artTemplate` 开发移动端响应式页面"
+      ]
+    }]
+  },
+  "skills": {
+    "title": "工作技能",
+      "description": [
+      "熟悉 `Python`，能实现简单的数据及图像处理工具、自动化脚本、爬虫、机器学习算法及分布式程序",
+      "了解 `WebGL` /  `Three.js`，对数字图像处理感兴趣，能实现较复杂的3D图形程序",
+      "了解 `C` / `C++` / `Java`，能编写简单的安卓应用程序，有 `Java Socket` 网络编程的开发经验",
+      "具备基本的 `Web 安全`知识（`X.509` / `XSS` / `CSRF` 等）",
+      "日常使用 `Git` 与 `Sublime Text` 进行开发，也乐于尝试新工具",
+      "能够使用 `Photoshop` 完成简单的设计与切图工作"
+    ]}
+}

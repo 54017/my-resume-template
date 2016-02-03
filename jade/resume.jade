@@ -1,0 +1,61 @@
+extends ./layout.jade
+
+block title
+	title= resume_title
+
+block style
+	link(rel="stylesheet/less" type="text/css" href="less/index.less")
+
+block sidebar
+	.left-block
+		figure
+			img#qrcode
+		section.title
+			h1= name
+			h3= job_intension
+		.radar
+			canvas#radar(width="237" height="235")
+		section#language
+			h3= language.tile
+			each cert in language.certificate
+				dl
+					dt= cert.type
+					dd
+						.progress-bar(style="width: " + Math.floor(cert.score / cert.full * 100) + "%;")
+							span= cert.score
+
+		section#personal-information
+			ul.contact
+				li.mobile= contact.phone
+				li.email= contact.email
+				li.wechat= contact.wechat.id
+				li.github= contact.github
+
+	.right-block
+		section#eduction
+			h3= education.title
+			ul
+			each school in education.schools
+				li
+					dl
+						dt school.name
+						dd.clock= school.start + " ~ " + school.end
+						dd.major= school.major
+						each honor in school.honors
+							dd= honor
+		section#experience
+			h3= experience.title
+			dl
+				each work in experience.works
+					dt work.name
+						span.time= work.start + " ~ " + work.end
+					each des in work.description
+						dd= des
+		section#skill
+			h3= skills.title
+			dl
+				each des in skills.description
+					dd= des
+	script(type="text/javascript" src="js/less.min.js")
+	script(type="text/javascript" src="js/Chart.min.js")
+	script(type="text/javascript" src="js/index.js")
