@@ -11,9 +11,16 @@
     "url": "git+https://github.com/54017/my-template.git"
   },
   "devDependencies": {
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.8.5",
     "jade": "^1.11.0",
+    "jade-loader": "^0.8.0",
+    "json-loader": "^0.5.4",
     "less": "^2.6.0",
-    "webpack": "^1.0.0"
+    "less-loader": "^2.2.2",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.12"
   },
   "keywords": [
     "resume"

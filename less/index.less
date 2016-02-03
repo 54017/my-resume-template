@@ -35,12 +35,17 @@ ul {
 	margin: 0 0;
 }
 
+ul, ol, dl, li {
+  line-height: 1.42857143;
+}
+
 
 
 #container {
-	margin: 20px auto 30px auto;
-	width: 830px;
+	margin: 0 auto 0 auto;
+	width: 920px;
 	overflow: hidden;
+	padding-right: 20px;
 }
 
 .left-block, .right-block {
@@ -49,12 +54,12 @@ ul {
 }
 
 .left-block {
-	width: 280px;
+	width: 33%;
 }
 
 .right-block {
-	width: 550px;
-	float: left;
+	width: 65%;
+	float: right;
 	padding-left: 95px;
 }
 
@@ -121,35 +126,17 @@ figure {
 		margin: 0 8px 0 55px;
 		border-radius: 5px;
 	}
-	.four-item, .six-item {
-		margin-top: 8px;
-		.progress-bar {
-			border-radius: 4px;
-			background-color: white;
-		}
-	}
-	.four-item {
-		.progress-bar {
-			width: 83%;
-		}
-		.progress-bar::after {
-			content: "607";
-			margin-left: 80%;
-			color: @basic-blue;
-		}
-	}
-	.six-item {
-		.progress-bar {
-			width: 75%;
-		}
-		.progress-bar::after {
-			content: "557";
-			margin-left: 80%;
+	.progress-bar {
+		background-color: white;
+		border-radius: 4px;
+		text-align: right;
+		padding-right: 4px;
+		span {
 			color: @basic-blue;
 		}
 	}
 	li {
-		font-size: 14px;
+		font-size: 16px;
 		padding-left: 15px;
 	}
 	li::before {
@@ -160,12 +147,17 @@ figure {
 	}
 }
 
+.hidden {
+	margin-top: 60px;
+	visibility: hidden;
+}
+
 
 #personal-information {
 	color: white;
 	margin: 20px 8px 0 23px;
 	position: absolute;
-	bottom: 30px;
+	bottom: 20px;
 	li {
 		font-size: 16px;
 		margin: 7px 0 0 25px;
@@ -274,7 +266,7 @@ span.time {
 		margin-bottom: 1px;
 	}
 	dl {
-		margin-top: 25px;
+		margin-top: 15px;
 	}
 	dt {
 		font-size: 18px;

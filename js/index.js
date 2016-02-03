@@ -1,36 +1,56 @@
-(function() {
+var Chart = require("./Chart.min.js");
+require("../less/index.less");
 
-	var init = function() {
-		var rightBlock = document.getElementsByClassName('right-block')[0];
-		var leftBlock = document.getElementsByClassName('left-block')[0];
-		var leftHeight = parseInt(rightBlock.offsetHeight) + 30;
- 		leftBlock.style.height = leftHeight + "px";
-		var ctx = document.getElementById('radar').getContext('2d');
-		var data = {
-		    labels: ["HTML", "JavaScript", "CSS", "Three.js", "WebGL", "Node.js", "Python"],
-		    datasets: [
-		           {
-			            label: "My Second dataset",
-			            fillColor: "rgba(126, 206, 253, 0.4)",
-			            strokeColor: "rgb(126,206,253)",
-			            pointColor: "rgba(255 ,255 ,255 ,1)",
-			            pointStrokeColor: "rgb(126,206,253)",
-			            pointHighlightFill: "rgb(126,206,253)",
-			            pointHighlightStroke: "rgb(126,206,253)",
-			            data: [90, 90, 80, 60, 50, 80, 70]
-			        }
-		    ]
-		};
-		var chartOptions = {
-			pointLabelFontSize : 14,
-		  	angleLineColor : "rgba(205 ,209 ,211 ,1)",
-		  	pointLabelFontColor : "rgba(255 ,255 ,255 ,1)",
-		  	pointLabelFontFamily : "'Roboto Slab', serif",
-		  	scaleLineColor:"rgba(205 ,209 ,211 ,1)"
-		};
+var locals = require("../resume.json");
 
-		var myRadarChart = new Chart(ctx).Radar(data, chartOptions);
-	}	
+var template = require("../jade/resume.jade")(locals);
 
-	window.onload = init;
-}())
+template = template.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/`(.+?)`/g, '<strong>$1</strong>');
+
+document.getElementsByTagName('body')[0].innerHTML = template;
+
+document.title = locals.name + " - 个人简历";
+
+var init = function() {
+	var ctx = document.getElementById('radar').getContext('2d');
+	var data = {
+	    labels: locals.radar.ability,
+	    datasets: [
+	           {
+		            label: "My Second dataset",
+		            fillColor: "rgba(126, 206, 253, 0.4)",
+		            strokeColor: "rgb(126,206,253)",
+		            pointColor: "rgba(255 ,255 ,255 ,1)",
+		            pointStrokeColor: "rgb(126,206,253)",
+		            pointHighlightFill: "rgb(126,206,253)",
+		            pointHighlightStroke: "rgb(126,206,253)",
+		            data: locals.radar.magnitude
+		        }
+	    ]
+	};
+	var chartOptions = {
+		pointLabelFontSize : 14,
+	  	angleLineColor : "rgba(205 ,209 ,211 ,1)",
+	  	pointLabelFontColor : "rgba(255 ,255 ,255 ,1)",
+	  	pointLabelFontFamily : "'Roboto Slab', serif",
+	  	scaleLineColor:"rgba(205 ,209 ,211 ,1)"
+	};
+
+	var myRadarChart = new Chart(ctx).Radar(data, chartOptions);
+
+	var rightBlock = document.getElementsByClassName('right-block')[0];
+	var leftBlock = document.getElementsByClassName('left-block')[0];
+	var rightHeight = parseInt(rightBlock.offsetHeight),
+		leftHeight = parseInt(leftBlock.offsetHeight);
+	var max;
+	if (rightHeight > leftHeight) {
+		max  = rightHeight + 10;
+	} else {
+		console.log(max);
+		max = leftHeight;
+	}
+	leftBlock.style.height = max + "px";
+	rightBlock.style.height = max + "px";
+}	
+
+window.onload = init;
