@@ -9,7 +9,7 @@ template = template.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>').replace(/`(
 
 document.getElementsByTagName('body')[0].innerHTML = template;
 
-document.title = locals.name + " - 个人简历";
+document.title = locals.resume_title;
 
 var init = function() {
 	var ctx = document.getElementById('radar').getContext('2d');

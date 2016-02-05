@@ -2,7 +2,7 @@
   "name": "resume",
   "version": "1.0.0",
   "description": "resume-generator",
-  "main": "webpack.configure.js",
+  "main": "webpack.config.js",
   "scripts": {
     "test": "make test"
   },
