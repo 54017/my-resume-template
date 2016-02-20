@@ -1,5 +1,5 @@
 # my-resume-template
 
-1. 执行npm install
-2. fill resume.json
-3. 执行webpack
+1. 在终端执行 npm install
+2. 修改resume.json中的配置
+3. 在终端执行 webpack
