@@ -44,7 +44,7 @@ var init = function() {
 		leftHeight = parseInt(leftBlock.offsetHeight);
 	var max;
 	if (rightHeight > leftHeight) {
-		max  = rightHeight + 10;
+		max  = rightHeight + 50;
 	} else {
 		console.log(max);
 		max = leftHeight;
