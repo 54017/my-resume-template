@@ -602,6 +602,16 @@
 					]
 				},
 				{
+					"name": "Omegle",
+					"start": "",
+					"end": "",
+					"description": [
+						"一个随机匹配陌生人的在线聊天室",
+						"基于 `WebRTC` 实现 `P2P` 视频通话技术，`socket.io` 提供实时通信功能",
+						"尝试使用 `React` 进行组件化编程，`Express` 搭建后台， `WebPack` 加载模块并驱动自动化工作流"
+					]
+				},
+				{
 					"name": "大学城微电商系统",
 					"start": "",
 					"end": "",
@@ -619,15 +629,6 @@
 						"使用 `Meteor API` / `MongoDB` 提供用户及作业数据 API",
 						"使用 `LiveScript` 编写前后端代码，`Jade` 渲染模板"
 					]
-				},
-				{
-					"name": "3D台球游戏",
-					"start": "",
-					"end": "",
-					"description": [
-						"基于 `Three.js` 实现的网页单机游戏",
-						"使用 `WebPack` 加载模块并驱动自动化工作流，`ammo.js` 提供物理引擎，`Web Worker` 优化图像处理效率"
-					]
 				}
 			]
 		},
@@ -637,8 +638,8 @@
 				"熟悉已标准化的 `HTML5` / `CSS3` 新特性，能够实现较复杂的布局与动画",
 				"熟悉 `jQuery` / `jQuery UI` / `Bootstrap` / `Zepto` 等框架的使用",
 				"在项目中使用过 `RequireJS` / `WebPack` 等模块化解决方案，了解并且实践各种 JavaScript 设计模式",
-				"使用 `CreateJS` / `TweenLite` / `AngularJS` / `Ionic` 编写过简单的 WebApp，了解 `React` 及前端 `MV*` 模型",
-				"了解 `HTTP`、 `TCP/IP`、 `WebSocket`、 `OAuth2.0` 等协议，具备基本的 Web 安全知识（`X.509` / `XSS` / `CSRF` 等）",
+				"使用 `CreateJS` / `AngularJS` / `Ionic` 编写过简单的 WebApp，了解 `React` 及前端 `MV*` 模型",
+				"了解 `HTTP`、 `TCP/IP`、 `WebSocket`、 `OAuth2.0` 等协议，具备基本的 Web 安全知识（`XSS` / `CSRF` 等）",
 				"了解 `Three.js` / `WebGL`，对数字图像处理感兴趣，能实现较复杂的3D图形程序",
 				"能够使用 `Node.js API` / `Express` / `Tornado` 搭建简单的后端程序，了解异步 I/O 及事件驱动的服务器模型，掌握常见的异步编程解决方案",
 				"熟悉 `Python`，能实现简单的数据及图像处理工具、自动化脚本及分布式程序"
