@@ -51,6 +51,16 @@
   "experience": {
     "title": "项目与工作经历",
      "works": [{
+        "name": "腾讯 微信事业群 开放平台（实习）",
+        "start": "2016.07.01",
+        "end": "至今",
+        "description": [
+          "参与跟进微信公众平台和开放平台的需求，使用 React 开发内部系统",
+          "重构业务代码，抽象出可维护性高、扩展性强的通用模版",
+          "研究 `Google Accelerated Mobile Pages Project`，尝试使用其中的一些规范和方法优化性能，提高用户体验"
+        ]
+      },
+     {
       "name": "阿里巴巴 UC移动事业群 （实习）",
       "start": "2015.07",
       "end": "2015.09",
@@ -67,7 +77,7 @@
       "description": [
         "一个随机匹配陌生人的在线聊天室",
         "基于 `WebRTC` 实现 `P2P` 视频通话技术，`socket.io` 提供实时通信功能",
-        "尝试使用 `React` 进行组件化编程，`Express` 搭建后台， `WebPack` 加载模块并驱动自动化工作流"
+        "使用 `React` 进行组件化编程，`Express` 搭建后台， `WebPack` 加载模块并驱动自动化工作流"
       ]
     },
     {
@@ -76,18 +86,7 @@
       "end": "",
       "description": [
         "提供中大学子查询图书馆借阅记录，学杂费，校园卡消费等信息的服务",
-        "基于 `Node.js` 通过学号和密码爬取相关信息，利用 `Promise` 优化代码结构",
-        "使用 `Tesseract` 光学识别和图像处理技术破解验证码"
-      ]
-    },
-    {
-      "name": "作业评测系统",
-      "start": "",
-      "end": "",
-      "description": [
-        "基于 `Meteor` 实现的实时作业上交与评测系统",
-        "使用 `Meteor API` / `MongoDB` 提供用户及作业数据 API",
-        "使用 `LiveScript` 编写前后端代码，`Jade` 渲染模板"
+        "基于 `Node.js` 通过学号和密码爬取相关信息，利用 `Promise` 优化代码结构"
       ]
     }]
   },
@@ -95,11 +94,10 @@
     "title": "工作技能",
       "description": [
       "熟悉已标准化的 `HTML5` / `CSS3` 新特性，能够实现较复杂的布局与动画",
-      "熟悉 `jQuery` / `jQuery UI` / `Bootstrap` / `Zepto` 等框架的使用",
       "在项目中使用过 `RequireJS` / `WebPack` 等模块化解决方案，了解并且实践各种 JavaScript 设计模式",
-      "使用 `CreateJS` / `AngularJS` / `Ionic` 编写过简单的 WebApp，了解 `React` 及前端 `MV*` 模型",
+      "使用 `AngularJS` / `Ionic` 编写过简单的 WebApp，了解 `React` 及前端 `MV*` 模型",
       "了解 `HTTP`、 `TCP/IP`、 `WebSocket`、 `OAuth2.0` 等协议，具备基本的 Web 安全知识（`XSS` / `CSRF` 等）",
-      "了解 `Three.js` / `WebGL`，对数字图像处理感兴趣，能实现较复杂的3D图形程序",
+      "了解 `Three.js`，对数字图像处理感兴趣，能实现较复杂的3D图形程序",
       "能够使用 `Node.js API` / `Express` / `Tornado` 搭建简单的后端程序，了解异步 I/O 及事件驱动的服务器模型，掌握常见的异步编程解决方案",
       "熟悉 `Python`，能实现简单的数据及图像处理工具、自动化脚本及分布式程序"
     ]}
